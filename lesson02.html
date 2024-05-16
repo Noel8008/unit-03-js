@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lesson 02 - user interactivity</h1>
+    <label>Name: </label>
+    <input id="name">
+    <br>
+    <br>
+    <button onclick="clickMe ()">Click Me</button>
+
+<h2 id="hiName"></h2>
+    <script>
+        let nameInput = document.getElementById("name")
+        let nameOutput = document.getElementById("hiName")
+        console.log(nameInput.value)
+
+        function clickMe (){
+            console.log(nameInput.value)
+            nameOutput.innerText = "Hello,  " + nameInput.value
+                }
+    </script>
+</body>
+</html>
